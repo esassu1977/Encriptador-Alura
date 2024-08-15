@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Proyecto Final</title>
+</head>
+<body class="body">
+
+    <!--Header -->
+    <header class="header"><img class="header__imagen_logo" src="assets/Logo.png" alt="Logo de Alura encabezando la página del proyecto fianl"></header>
+
+    <!--Sección main: dentro de ella se conformará por dos secciones con los elementos requeridos-->
+    <main class="main">
+        <section class="main__seccion__uno"> 
+
+            
+            <textarea id="captura_texto" class="main__seccion__uno__textarea__captura"  placeholder="Ingrese el texto aqui"></textarea>
+            
+            <div class="main__seccion__uno__advertencia"> 
+                 
+                <img class="main__seccion__uno__advertencia__imagen" src="assets/bi_exclamation-circle-fill.png">
+                <p class="main__seccion__uno__advertencia__texto">Solo letras minúsculas y sin acentos</p>            
+            </div>
+
+            <div class="main__seccion__uno__botonera"> 
+                <button onclick="eventEncriptar();" id="encriptar" class="main__seccion__uno__botonera__encripta">Encriptar</button>
+                <button onclick="eventDesencriptar();" id="desencriptar" class="main__seccion__uno__botonera__desencripta">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="main__seccion__dos">
+            <div class="main__seccion__dos__contenedor">               
+                <img id="munieco" class="main__seccion__dos__contenedor__imagen" src="./assets/Muñeco.png" alt="Imagen de un muñeco realizando una busqueda">                                  
+                <p id="texto1" class="main__seccion__dos__contenedor__texto1">
+                    Ningún mensaje fue encontrado
+                </p>
+                <p id="texto2" class="main__seccion__dos__contenedor__texto2">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>                                
+            </div>
+            <textarea id="muestra_texto" class = "main__seccion__dos__textArea" readonly></textarea> 
+            <button onclick="copyTexto();" id="copiar" class="main__seccion__dos__boton">Copiar</button>    
+        </section> 
+    </main>
+    <!--Sección del footer-->
+    <footer class="footer">
+        <p class="footer__texto__fina">2024 Desarrollado por Esaú Sanabria, como parte de la certificación de Oracle One impartida por Alura</p>
+        <a href="https://www.linkedin.com/in/esassu/" target="_blank" rel="noopener noreferrer"  class="footer__linkedin__link">
+            <img src="./assets/linkedin.svg" alt="Logo de linkedin con enlace a mi perfíl">
+        </a>
+        <a href=" https://github.com/esassu1977" target="_blank" rel="noopener noreferrer"  class="footer__github__link">
+            <img src="./assets/github.svg" alt="Logo de github con enlace a mi perfíl">
+        </a>
+    </footer>
+<script src="encriptador.js"></script>
+</body>
+
+</html>

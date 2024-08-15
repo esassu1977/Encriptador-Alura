@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --color-texto-escrito-boton-encriptar:#0A3871; /*dark blue 300*/
+    --color-body-boton-desencriptar2:#E5E5E5; /*Fondo body*/
+    --color-boton-desencriptar1:#D8DFE8; /*Botón desencriptar*/
+    --color-texto-mostrado:#343A40; /*Mensaje "Ningún texto encontrado" */
+    --color-div-display:#FFF; /*color display derecho*/
+    --color-hover-boton-encriptar:#052051; /*dark blue 500*/
+    --color-hover-boton-desencriptar:#CED4DA; /*Gray 100 */ 
+    --color-borde-textarea: #c5c5c5;
+    --color-blanco-azulado: #d8dfe8;
+    --color-azul-medio: #0a38718a;
+    --color-sombra-gris: #343a40;
+    
+    --fuente-inter: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.body{
+    background-color: var(--color-body-boton-desencriptar2);
+    height: 100%;
+}
+
+.header{
+    position: absolute;
+    margin: 4rem 0rem 0rem 4rem;
+}
+
+header .header__imagen_logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+
+.main{
+   display: flex; 
+   flex-direction: row;
+   
+   justify-content: flex-start;
+   margin-bottom: 5%;
+     
+}
+.main__seccion__uno{
+    width: 60%;
+    margin: 16.8rem 0rem 0rem 14rem; 
+
+}
+
+
+
+.main__seccion__uno__textarea__captura{
+    width: 66rem;
+    height: 28.8rem;
+    font-family: var(--fuente-inter);
+    font-weight: 400;    
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    outline: none;
+    text-align: left;
+    background-color: var(--color-body-boton-desencriptar2);
+    color: var(--color-texto-escrito-boton-encriptar);  
+    text-transform: lowercase;  
+    border: 1px solid var(--color-borde-textarea);
+    border-radius: 1rem;
+    resize: none;
+}
+
+.main__seccion__uno__textarea__captura ::placeholder,:focus{
+    color: var(--color-hover-boton-encriptar);
+    outline: no; 
+}
+
+.main__seccion__uno__advertencia{ 
+       
+    display: flex; 
+    flex-direction: row;   
+    align-items: center; 
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 50rem;
+        
+    
+}
+
+.main__seccion__uno__advertencia__imagen{ 
+   
+    width: 16px;
+    height: 16px;
+}
+
+.main__seccion__uno__advertencia__texto{
+    width: 100%;
+    font-family: var(--fuente-inter);
+    font-weight: 400;    
+    font-size: 1.2rem;
+    color: var(--color-texto-mostrado);
+    line-height: 150%;
+}
+
+.main__seccion__uno__botonera{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 52.6rem;
+    
+}
+
+.main__seccion__uno__botonera__encripta{   
+    
+    cursor: pointer;
+    border-radius: 24px;
+    border: 1px solid var(--color-texto-escrito-boton-encriptar);
+    width: 328px;
+    height: 67px;
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1.6rem;
+    color: var(--color-div-display);   
+    background-color: var(--color-texto-escrito-boton-encriptar);    
+}
+
+.main__seccion__uno__botonera__encripta:hover{
+    background-color: var(--color-hover-boton-encriptar);
+    transform: scale(0.97);
+}
+
+.main__seccion__uno__botonera__encripta:active{
+    box-shadow: inset 2px 2px 4px var(--color-borde-textarea);
+    inset: -3px -4px, 8px var(--color-hover-boton-encriptar);
+    color: var(--color-blanco-azulado);
+}
+
+.main__seccion__uno__botonera__desencripta{
+    border: 1px solid var(--color-texto-escrito-boton-encriptar);
+    cursor: pointer;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1.6rem;
+    color: var(--color-texto-escrito-boton-encriptar);    
+    background-color: var(--color-boton-desencriptar1);
+}
+
+.main__seccion__uno__botonera__desencripta:hover{
+    background-color: var(--color-hover-boton-desencriptar);
+    transform: scale(0.97);
+}
+
+.main__seccion__uno__botonera__desencripta:active{
+    box-shadow: inset 2px 2px 4px var(--color-texto-escrito-boton-encriptar);
+    inset: -3px -4px, 8px var(--color-hover-boton-encriptar);
+    color: var(--color-azul-medio);
+}
+
+/*Segunda columna donde aparece el dibujo del muñeco*/
+.main__seccion__dos{
+    
+    width: 27rem;
+    height: 58rem;
+    box-shadow: 0 3px 3px var(--color-sombra-gris);
+    border-radius: 24px;
+    background-color: var(--color-div-display);
+    position: relative;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.main__seccion__dos__contenedor{
+    width: 25rem;    
+    margin: auto;
+    margin-top: 50%;
+    background: var(--color-div-display);
+    border-radius: 24px;
+    
+}
+
+.main__seccion__dos__contenedor__imagen{
+    background: var(--color-div-display);
+}
+
+.main__seccion__dos__textArea{
+    width: 100%;
+    height: 40rem;
+    position: absolute;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 2.4rem;  
+    border: none;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: var(--color-texto-mostrado);
+    background: transparent;
+    resize: none;
+   
+}
+
+.main__seccion__dos__textArea:focus{
+    outline: none;
+}
+
+
+.main__seccion__dos__contenedor__texto1{
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-weight: 700;
+    color: var(--color-texto-mostrado);
+    font-size: 2.4rem; 
+    line-height: 120%;
+   
+}
+
+.main__seccion__dos__contenedor__texto2{
+    
+    font-family: var(--fuente-inter);
+    color: var(--color-texto-mostrado);
+    font-size: 1.6rem; 
+    line-height: 150%;
+}
+
+.main__seccion__dos__boton{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2.4rem;
+    margin: 2.3rem;
+    width: 22.4rem;
+    height: 6.7rem;
+    text-align: center;
+    line-height: 1.9rem;
+    font-family: var(--fuente-inter);
+    font-size: 1.6rem;
+    color: var(--color-texto-escrito-boton-encriptar);
+    padding: 24px 0px;
+    background-color: var(--color-div-display);
+    border-radius: 24px;  
+    border: 1px solid var(--color-texto-escrito-boton-encriptar);   
+    cursor: pointer;
+}
+
+.main__seccion__dos__boton:hover{
+    background-color: var(--color-body-boton-desencriptar2);
+    transform: scale(0.97);
+}
+
+/*footer*/
+
+footer{
+    
+    margin-top:1.5rem;
+    padding: 1rem;
+    border-top: 0.2rem solid var(--color-sombra-gris); 
+    color: var(--color-hover-boton-encriptar);
+    text-align: center;
+    height: 0.5rem;
+    font-family: var(--fuente-inter);
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.footer__linkedin__link:hover{
+    color: var(--color-body-boton-desencriptar2);
+    opacity: 0.8;
+}
+
+.footer__github__link:hover{
+    color: var(--color-body-boton-desencriptar2);
+    opacity: 0.6;
+}
+
+/*Responsive para tablet*/
+@media(max-width: 768px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 50%;
+             
+    }
+
+    .main__seccion__uno{
+        display: flex;
+        margin: 16.8rem 0rem 0rem 0rem;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }   
+    
+    .main__seccion__uno__textarea__captura{
+        display: flex;
+        width: 100%;
+        font-size: 2.6rem;
+    }
+
+    .main__seccion__uno__botonera{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        position: inherit;
+    }
+
+    .main__seccion__uno__advertencia{
+        position: inherit;
+        margin: 1.5rem;
+    }
+
+    .main__seccion__dos{
+        width: 82%;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .main__seccion__dos__contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+       
+        position: absolute;
+        bottom: 20%;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .main__seccion__dos__contenedor__imagen{
+        display: none;
+    }
+
+    .main__seccion__dos__boton{
+        position: inherit;
+        width: 100%;
+    }
+
+    .main__seccion__dos__textArea{
+        width: 100%;
+        height: 21rem;
+        padding: 1rem
+    }
+    
+}
+
+/*Responsive para celular*/
+@media(max-width: 375px){
+    .header__imagen_logo{
+        width: 100%;
+        padding: 2%;
+    }
+
+    .main__seccion__uno{
+        width: 90%;
+        font-size: 2.4rem;
+    }
+
+    .main__seccion__uno__botonera{
+        display: grid;
+        gap: 2.1rem;
+
+    }
+    
+    .main__seccion__dos{
+        width: 89%;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
